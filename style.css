@@ -1,0 +1,866 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@100;200;300;400;500&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-white {
+
+   background-color: #fff;
+}
+.mt-5{
+
+   padding: 180px 20px;
+}
+.nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    background-color: #222;
+    z-index: 10000;
+}
+
+.nav h2{
+    color: #ffffff ;
+    font-size: 1.7rem;
+}
+
+.nav span{
+    color: #ff5733;
+    /* opacity: 9rem; */
+}
+
+#item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#item li{
+    list-style: none;
+    padding-right: 50px;
+}
+
+#item li a{
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+#item li a:hover, #item .icon i:hover{
+    color: #ff5733;
+    cursor: pointer;
+}
+
+#item .icon i{
+    color: #ffffff;
+    padding-right: 30px;
+    font-weight: bold;
+}
+
+#bar{
+   color: #ff5733;
+   font-weight: lighter;
+   font-size: 1.5rem;
+   display: none;
+}
+
+.back{
+    background-image: url(./picture/bg.jpg);
+    width: 100%;
+    height:100vh ;
+    background-size: cover;
+    z-index: -1;
+}
+
+.back .overlay{
+    background-color: #171819;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+.mid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.mid p{
+    color: #7f8c8d;
+    font-size: 1.3rem;
+    margin-bottom: 1.4rem;
+
+}
+
+.mid h2{
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+.mid .button{
+    margin-top: 2rem;
+
+
+}
+
+.mid .button a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.mid .button a.simple{
+   color: #ffffff;
+   font-weight: 500;
+   padding: 0.9rem 1.6rem;  
+}
+
+.mid .button a.simple:hover{
+    color: #ff5733;
+
+}
+
+.mid .button a.border{
+    color: #ff5733;
+    border: 1px solid #ff5733;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem;
+      border-radius: 3px;
+ }
+ 
+ .mid .button a.border:hover{
+    background-color: #fff;
+    border:1px solid #fff;
+ }
+ .detail{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 15rem;
+    background-color: #171819;
+ }
+
+ .detail h3,h6,h5{
+    color: #ffffff;
+ }
+ .detail .one{
+    width : 45%;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+ }
+ .detail .one h3{
+
+    font-size: 2rem;
+    padding-bottom: 1.1rem;
+ }
+
+ .detail .one h6{
+    font-size: 1.2rem;
+    font-size: 400;
+    padding-bottom: 1.2rem;
+ }
+ .detail .one p{
+    color: #666262;
+    font-size: 1.2rem;
+    padding-bottom: 3rem;
+ }
+
+ .detail .one a{
+    color: #fff ;
+    background: #f13a11;
+    padding: 1rem 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+ }
+
+ .detail .one a:hover{
+    background-color: #fff;
+    color: #f13a11;
+ }
+ .detail .two{
+    width:45%;
+    border-left: 1px solid #666262;
+    padding-left: 4rem;
+ }
+
+ .detail .two h3{
+    font-size: 2.5rem;
+    padding-bottom: 1.1rem;
+ }
+
+ .detail .two h5{
+    font-size: 1.1rem;
+ }
+
+ .detail .two p{
+    font-size: 1.1rem;
+    color: #666262;
+    margin-bottom: 0.8rem;
+ }
+
+ .trainer{
+    background-color: #f9f9f9;
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+ .trainer .about{
+    width: 39%;
+ }
+
+ .trainer .about h2{
+    color: #212529;
+    font-size: 2.1rem;
+    padding-bottom: 1.8rem;
+ }
+
+ .trainer .about p{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+ }
+
+ .trainer .people{
+    width: 57%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .trainer .people .team1{
+    width: 45%;
+    height: auto;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow:
+  4.5px 4.5px 3.6px rgba(0, 0, 0, 0.031),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.045),
+  30.1px 30.1px 24.1px rgba(0, 0, 0, 0.059),
+  100px 100px 80px rgba(0, 0, 0, 0.09)
+;
+ }
+
+ .trainer .people .team1 .img img{
+    width:100%;
+    object-fit: cover;
+ }
+
+ .trainer .people .team1 .name,  .trainer .people .team1 .pro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .trainer .people .team1 .name{
+    padding: 5px 20px 0  20px;
+ }
+ .trainer .people .team1 .teamdetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+ }
+
+ .trainer .people .team1 .name h4{
+    color: #212529;
+    font-size: 1.5rem;
+ }
+
+ .trainer .people .team1 .name i,  .trainer .people .team1 .pro i{
+    font-size: 1.rem;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #212529;
+ }
+ 
+ .trainer .people .team1 .pro{
+    padding: 0 20px 5px 20px;
+ }
+
+ .trainer .people .team1 .pro p{
+    color: #212529;
+ }
+ .class{
+   display: flex;
+   background-color: #fff;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 7rem 8rem;
+   
+ }
+
+ .class .paragraph{
+   font-size: 1.3rem;
+   color: #95a5a6;
+   padding-bottom: 6px;
+   text-align: center;
+ }
+ .class .h2{
+   font-size: 2.2rem;
+   color: #fff;
+   font-weight: 800;
+   padding-bottom: 50px;
+   text-align: center;
+ }
+
+ .class .classmenu{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .class .classmenu .team1{
+   width: 32%;
+   height: auto;
+   box-sizing: border-box;
+   background: #fff;
+   box-shadow:
+ 4.5px 4.5px 3.6px rgba(0, 0, 0, 0.031),
+ 12.5px 12.5px 10px rgba(0, 0, 0, 0.045),
+ 30.1px 30.1px 24.1px rgba(0, 0, 0, 0.059),
+ 100px 100px 80px rgba(0, 0, 0, 0.09)
+;
+}
+
+.class .classmenu .team1 .img img{
+   width:100%;
+   object-fit: cover;
+}
+
+.class .classmenu .team1 .teamdetail{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-bottom: 10px;
+}
+
+.class .classmenu .team1 .teamdetail .name{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5px 30px 0 30px;
+}
+
+.class .classmenu .team1 .teamdetail .name .namedetail h4{
+   color: #212529;
+   font-size: 1.7rem;
+}
+
+.class .classmenu .team1 .teamdetail .name .namedetail h4 p{
+   color: #212529;
+   font-size: 1.1rem;
+}
+
+.class .classmenu .team1 .teamdetail .name .namedetail p span{
+   font-weight: 700;
+   font-size: 1.1rem;
+}
+
+.class .classmenu .team1 .teamdetail .name .num h5{ 
+  font-size: 1rem;
+  background: #f13a11;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.class .classmenu .team1 .pro{
+   padding: 15px 30px 30px 30px;
+}
+
+.class .classmenu .team1 .pro p{ 
+   font-size: 1rem;
+   color: #666262;
+ }
+
+.contact{
+   padding: 8rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   background-color: #fff;
+
+}
+
+.contact .form{
+   width: 45%;
+}
+
+.contact .form h2{
+   font-size: 2rem;
+   color: #212529;
+   padding-bottom: 10px;
+   width: 100%;
+}
+
+.contact .form .submit{
+   display: flex;
+   flex-direction:column ;
+   justify-content: flex-start ;
+   align-items: flex-start;
+}
+
+.contact .form .submit input, .contact .form .submit textarea{
+   width: 100%;
+   padding: 15px;
+   border: 1px solid #95a5a6;
+   outline: none;
+   margin: 13px 0;
+
+}
+
+.contact .form .submit input:focus, .contact .form .submit textarea:focus{
+   border: 1px solid #111;
+}
+
+.contact .form .submit input::placeholder{
+   color: #7f8c8d;
+   font-size: 1.1rem;
+}
+
+.contact .form .submit textarea::placeholder{
+   color: #7f8c8d;
+   font-size: 1.1rem;
+   height: 80%;
+}
+
+.contact .form .submit a{
+   width: 100%;
+   padding: 15px 0;
+   text-decoration: none;
+   background: #111;
+   color: #ffffff;
+   text-align: center;
+   font-size: 1.1rem;
+   margin: 13px 0;
+}
+
+.contact .map{
+   width: 45%;
+}
+.contact .map h2{
+   font-size: 1.1rem;
+   color: #212529;
+   padding-bottom: 10px;
+   width: 100%;
+}
+
+.contact .map p{
+   font-size: 1.1rem;
+   color: #212529;
+   padding-bottom: 30px;
+   width: 100%;
+}
+
+.contact .map iframe{
+   width: 100%;
+}
+
+.contact .map p i{
+   color: red;
+   padding-right: 4px;
+}
+
+.footer{
+   border-top: 1px solid #ecf0f1 ;
+   padding: 5rem 8rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.footer p{
+   color: #7f8c8d;
+   justify-content: flex-start;
+}
+
+.footer p i{
+   color: red;
+   padding-right: 5px;
+}
+
+
+/* login page */
+
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, sans-serif;
+   background-color: #232323;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+.login-form {
+   background-color: 222;
+   padding: 20px;
+   border-radius: 5px;
+   border: solid #ff5733 ;
+   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+   text-align: center;
+   max-width: 400px;
+   width: 100%;
+}
+
+h2 {
+   color: #ff5733;
+   margin-bottom: 20px;
+}
+
+.input-container {
+   text-align: left;
+   margin-bottom: 13px;
+}
+
+label {
+   font-weight: bold;
+   color: #ff5733;
+}
+
+input {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ff5733;
+   border-radius: 5px;
+   font-size: 16px;
+}
+
+button {
+   background-color: #be563e;
+   color: #fff;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 18px;
+   transition: background-color 0.3s;
+}
+
+button:hover {
+   background-color: #ff5733;
+}
+
+
+/* Media quries */
+
+@media screen and (max-width: 1042px){
+   .nav{
+     
+      padding: 1rem 4.5rem;
+     
+  }
+  
+  .nav h2{
+      
+      font-size: 1.4rem;
+  }
+  
+  .nav span{
+      color: #ff5733;
+      /* opacity: 9rem; */
+  }
+  
+  
+  
+  #item li{
+      padding-right: 30px;
+  }
+  
+  #item li a{
+      font-size: 0.9rem;
+  }
+  
+  #item .icon i{
+      
+      padding-right: 20px;
+     
+  }
+  
+
+}
+
+@media screen and (max-width: 991px){
+   .nav{
+      
+      padding: 1rem 3rem;
+      
+  }
+  
+  .nav h2{
+      font-size: 1.6rem;
+  }
+  
+  .nav span{
+      color: #ff5733;
+      /* opacity: 9rem; */
+  }
+  
+  #item{
+      flex-direction: column;
+      text-align: center;
+      width: 300px;
+      height: 80vh;
+      position: fixed;
+      top: 0;
+      right: -300px ;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 100000;
+      margin-top: 4.2rem;
+      transition: 0.5s;
+
+  }
+  
+  #item li{
+      padding-right: 0px;
+      padding: 4px 0;
+  }
+  
+  #item li a{
+     
+      font-size: 1.2rem;
+  }
+  
+  #item .icon {
+      padding-top: 20px ;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+  }
+  
+  #item .icon i{
+      
+      padding: 0 15px 0 15px ;
+  }
+
+  
+  #bar{
+     display: initial;
+     cursor: pointer;
+  }
+
+.mid p{
+   font-size: 1.1rem;
+   margin-bottom: 1.2rem;
+
+}
+
+.mid h2{
+   font-size: 2.5rem;
+}
+
+.mid .button{
+   margin-top: 1.5rem;
+
+
+}
+
+.mid .button a{
+  font-size: 0.9rem;
+}
+
+.mid .button a.simple{
+  padding: 0.7rem 1.4rem;  
+}
+
+.mid .button a.border{
+   padding: 0.7rem 1.4rem;
+}
+.detail{
+   padding: 6rem 7rem;
+}
+
+
+.detail .one{
+   width : 50%;
+}
+.detail .one h3{
+
+   font-size: 2rem;
+   padding-bottom: 1rem;
+}
+
+.detail .one p{
+   font-size: 1.1rem;
+   margin-bottom: 2.2rem;
+
+}
+
+.detail .one a{
+  font-size: 0.9rem;
+}
+.detail .two{
+   padding-left: 3.5rem;
+}
+
+.detail .two h3{
+   font-size: 2rem;
+}
+
+.detail .two h5{
+   font-size: 1rem;
+}
+
+.detail .two p{
+   font-size: 1rem;
+   margin-bottom: 0.6rem;
+}
+
+.trainer{
+   padding: 6rem 7rem;
+}
+
+.trainer .about h2{
+   font-size: 2rem;
+   padding-bottom: 1.4rem;
+}
+
+.trainer .about p{
+   font-size: 1rem;
+}
+.trainer .people .team1{
+   width: 48%;
+  
+}
+.trainer .people .team1 .name{
+   padding: 5px 15px 0  15px;
+}
+
+.trainer .people .team1 .name h4{
+   font-size: 1.1rem;
+}
+
+.trainer .people .team1 .name i,  .trainer .people .team1 .pro i{
+   font-size: 1.1rem;
+}
+
+.trainer .people .team1 .pro{
+   padding: 0 15px 5px 15px;
+}
+
+.class{
+   padding: 6rem;
+ }
+
+ .class .paragraph{
+   font-size: 1.1rem;
+   padding-bottom: 6px;
+ }
+ .class .h2{
+   font-size: 2rem;
+   padding-bottom: 30px;
+ }
+
+.class .classmenu .team1 .teamdetail{
+   padding-bottom: 7px;
+}
+
+.class .classmenu .team1 .teamdetail .name{
+   padding: 5px 15px 0 15px;
+}
+
+.class .classmenu .team1 .teamdetail .name .namedetail h4{
+   font-size: 1.2rem;
+}
+
+.class .classmenu .team1 .teamdetail .name .namedetail h4 p{
+
+   font-size: 1rem;
+}
+
+.class .classmenu .team1 .teamdetail .name .namedetail p span{
+   font-size: 1rem;
+}
+
+.class .classmenu .team1 .teamdetail .name .num h5{ 
+  font-size: 0.8rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  line-height: 3.2rem;
+}
+
+.class .classmenu .team1 .pro{
+   padding: 15px 15px 30px 30px;
+}
+
+.class .classmenu .team1 .pro p{ 
+   font-size: 1rem;
+ }
+
+ .contact{
+   padding: 6rem;
+}
+
+.contact .form h2{
+   font-size: 2rem;
+   padding-bottom: 7px;
+}
+
+.contact .form .submit input, .contact .form .submit textarea{
+   padding: 12px;
+   margin: 10px 0;
+
+}
+
+.contact .form .submit input::placeholder{
+   font-size: 1rem;
+}
+
+.contact .form .submit textarea::placeholder{
+   font-size: 1rem;
+}
+
+.contact .form .submit a{
+   padding: 13px 0;
+   font-size: 1rem;
+   margin: 10px 0;
+}
+.contact .map h2{
+   font-size: 2rem;
+     padding-bottom: 7px;
+   }
+
+.contact .map p{
+   font-size: 1rem;
+   padding-bottom: 20px;
+}
+
+
+.footer{
+   padding: 6rem;
+}
+@media screen and (max-width: 768px){
+
+   
+}
+
+@media screen and (max-width: 496px){
+   
+}
